@@ -1,0 +1,124 @@
+/*In Place Confirm btn*/
+.ipc-btn-container {
+    position: relative;
+}
+
+.ipc-btn {
+    transition:all ease 0.2s;
+    opacity: 1;
+}
+
+.ipc-btn.transparent {
+    opacity: 0;
+}
+
+.ipc-input {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.ipc-confirm-text {
+    height: 34px;
+    border: 1px solid #ccc;
+    border-radius: 4px 4px 0 0;
+    text-align: center;
+    line-height: 34px;
+    font-size: 0.9em;
+    background-color: #f7f7f7;
+}
+
+.ipc-confirm-btn {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+}
+
+.ipc-confirm-btn .btn:first-child {
+    border-top-left-radius: 0;
+}
+
+.ipc-confirm-btn .btn:last-child {
+    border-top-right-radius: 0;
+}
+
+.ipc-btn-container {
+    overflow: hidden;
+}
+
+.ipc-confirm-text.ng-hide-add, .ipc-confirm-text.ng-hide-remove {
+    overflow: inherit;
+    transition: all ease 0s;
+}
+
+.ipc-confirm-text.ng-hide-add-active, .ipc-confirm-text.ng-hide-remove-active {
+    overflow: hidden;
+    transition: all ease 0.2s;
+}
+
+.ipc-confirm-text.ng-hide-remove,
+.ipc-confirm-text.ng-hide-add.ng-hide-add-active {
+    height: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.ipc-confirm-text.ng-hide-add,
+.ipc-confirm-text.ng-hide-remove.ng-hide-remove-active {
+    height: 34px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.ipc-input.ng-hide-add, .ipc-input.ng-hide-remove {
+    overflow: inherit;
+    transition: all ease 0s;
+}
+
+.ipc-input.ng-hide-add-active, .ipc-input.ng-hide-remove-active {
+    overflow: hidden;
+    transition: all ease 0.2s;
+}
+
+.ipc-input.ng-hide-remove,
+.ipc-input.ng-hide-add.ng-hide-add-active {
+    height: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    padding: 0 12px;
+}
+
+.ipc-input.ng-hide-add,
+.ipc-input.ng-hide-remove.ng-hide-remove-active {
+    height: 34px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    padding: 6px 12px;
+}
+
+.ipc-confirm-btn.ng-hide-add .btn, .ipc-confirm-btn.ng-hide-remove .btn{
+    overflow: inherit;
+    transition: all ease 0s;
+}
+
+.ipc-confirm-btn.ng-hide-add-active .btn, .ipc-confirm-btn.ng-hide-remove-active .btn {
+    overflow: hidden;
+    transition: all ease 0.2s;
+}
+
+.ipc-confirm-btn.ng-hide-add, .ipc-confirm-btn.ng-hide-remove{
+    transition: all ease 0s;
+}
+
+.ipc-confirm-btn.ng-hide-add-active, .ipc-confirm-btn.ng-hide-remove-active {
+    transition: all ease 0.2s;
+}
+
+.ipc-confirm-btn.ng-hide-remove,
+.ipc-confirm-btn.ng-hide-add.ng-hide-add-active {
+    top: 100%;
+}
+
+.ipc-confirm-btn.ng-hide-add,
+.ipc-confirm-btn.ng-hide-remove.ng-hide-remove-active {
+    top: 50%;
+}
