@@ -2,12 +2,12 @@
     'use strict';
 
     angular
-        .module('ngInPlaceConfirmBtn')
+        .module('ngInPlaceConfirmBtn', ['ngAnimate'])
         .directive('ngInPlaceConfirmBtn', ipcActionBtnFunc);
 
     function ipcActionBtnFunc() {
         return {
-            template: '<div class="ipc-btn-container" ng-class="{\'has-error\': showValidation && option.hasInputBox && option.inputRequired && !inputValue.trim()}" on-global-click="cancel()">' +
+            template: '<div style="position: relative"><div class="ipc-btn-container" ng-class="{\'has-error\': showValidation && option.hasInputBox && option.inputRequired && !inputValue.trim()}" on-global-click="cancel()">' +
             '<div class="ipc-confirm-text ng-hide" ng-show="showConfirm" ng-if="!option.hasInputBox">' +
             '<span>Confirm to {{option.name}}</span>' +
             '</div>' +
@@ -20,8 +20,8 @@
             '</div>' +
             '<div class="my-popover" ng-class="option.tooltipDirection || \'left\'" ng-show="showConfirm && option.tooltip">' +
             '<div class="my-popover-arrow"></div>' +
-            '<div class="my-popover-body" style="padding: 8px"><span style="white-space: nowrap;">{{option.tooltip}}</span></div>' +
-            '</div>',
+            '<div class="my-popover-body" style="padding: 8px; width: 300px;"><span>{{option.tooltip}}</span></div>' +
+            '</div></div>',
             restrict: 'E',
             scope: {
                 option: "=",
@@ -60,7 +60,6 @@
                     scope.option.inputValue = '';
                     scope.cancel();
                 });
-                element.css('position', 'relative');
             }
         }
     }

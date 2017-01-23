@@ -1,3 +1,118 @@
+/*popover components*/
+.has-popover {
+    position: relative;
+}
+
+.my-popover {
+    position: absolute;
+    opacity: 1;
+    z-index: 100;
+    border-radius: 6px;
+}
+
+.my-popover.ng-hide-add, .my-popover.ng-hide-remove {
+    transition: all ease 0s;
+}
+
+.my-popover.ng-hide-add-active, .my-popover.ng-hide-remove-active {
+    transition: all ease 0.2s;
+}
+
+.my-popover.ng-hide-remove,
+.my-popover.ng-hide-add.ng-hide-add-active {
+    opacity: 0;
+}
+
+.my-popover.ng-hide-add,
+.my-popover.ng-hide-remove.ng-hide-remove-active {
+    opacity: 1;
+}
+
+.my-popover .close-btn {
+    position: absolute;
+    display: inline-block;
+    right: 6px;
+    top: 6px;
+}
+
+.my-popover.left {
+    right: 100%;
+    top: 0;
+    min-width: 150px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.my-popover.left .my-popover-arrow {
+    top: 10px;
+    right: -16px;
+    border-width: 8px;
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-left-color: #999;
+    border-left-color: rgba(0, 0, 0, .25);
+}
+
+.my-popover.left .my-popover-arrow:after {
+    content: " ";
+    border-width: 7px;
+    top: -7px;
+    left: -8px;
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-right-width: 0;
+    border-left-color: #fff;
+}
+
+.my-popover.right {
+    left: 100%;
+    top: 0;
+    min-width: 150px;
+    margin-left: 8px;
+    border: 1px solid #ccc;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.my-popover.right .my-popover-arrow {
+    top: 10px;
+    left: -16px;
+    border-width: 8px;
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-right-color: #999;
+    border-right-color: rgba(0, 0, 0, .25);
+}
+
+.my-popover.right .my-popover-arrow:after {
+    content: " ";
+    border-width: 7px;
+    top: -7px;
+    right: -8px;
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-left-width: 0;
+    border-right-color: #fff;
+}
+
 /*In Place Confirm btn*/
 .ipc-btn-container {
     position: relative;
