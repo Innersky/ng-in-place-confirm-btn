@@ -5,3 +5,14 @@ Usage: <br />
 <code>angular.module('myApp', ['ngInPlaceConfirmBtn'])</code>
 
 <code>\<ng-in-place-confirm-btn option="option" submit="submit"\>\<\/ng-in-place-confirm-btn\></code>
+
+<code>$scope.option = {
+                          id: 'myIpcBtn',
+                          name: 'My IPC Button',
+                          hasInputBox: true,
+                          placeholder: '(required) This is placeholder',
+                          tooltip: 'This is a tooltip This is a tooltip This is a tooltip This is a tooltip This is a tooltip This is a tooltip This is a tooltip',
+                          tooltipDirection: 'right',
+                          inputBoxName: 'myInput',
+                          inputRequired: true
+                      };</code>
