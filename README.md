@@ -4,4 +4,4 @@ Poping up an alert window is the most popular way to confirm a button action, wh
 Usage: <br />
 <code>angular.module('myApp', ['ngInPlaceConfirmBtn'])</code>
 
-<code><ng-in-place-confirm-btn option="option" submit="submit"></ng-in-place-confirm-btn></code>
+<code>\<ng-in-place-confirm-btn option="option" submit="submit"\>\<\/ng-in-place-confirm-btn\></code>
