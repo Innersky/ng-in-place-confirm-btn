@@ -25,6 +25,7 @@
     angular.module('myApp', ['ngInPlaceConfirmBtn'])
             .controller('myCtrl', function ($scope, $timeout) {
                 $scope.option1 = {
+                    yourID: 'btn-id',
                     name: 'My IPC Button with input',
                     hasInputBox: true,
                     placeholder: '(required) This is placeholder',
@@ -38,10 +39,11 @@
                     placeholder: 'This is placeholder',
                     tooltip: 'Tooltip by default on the left',
                 };
-                $scope.submit = function () {
+                $scope.submit = function (input, btnOption) {
                     $scope.$broadcast('submitting');
                     $timeout(function () {
                         $scope.$broadcast('submitted');
+                        window.alert("Your ID for this Button is: " + btnOption.yourID + ". Your input is: " + input);
                     }, 1000);
                 }
             });
