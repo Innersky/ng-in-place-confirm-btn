@@ -23,4 +23,11 @@ $scope.option =
     inputBoxName: 'myInput',
     inputRequired: true
 };
+
+$scope.submit = function () {
+    $scope.$broadcast('submitting');
+    $timeout(function () {
+        $scope.$broadcast('submitted');
+    }, 1000);
+}
 ```
