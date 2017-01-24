@@ -12,7 +12,10 @@
 <body ng-controller="myCtrl">
 <div class="container">
     <div style="width: 300px; padding-top: 50px; margin-left: auto; margin-right: auto">
-        <ng-in-place-confirm-btn option="option" submit="submit"></ng-in-place-confirm-btn>
+        <ng-in-place-confirm-btn option="option1" submit="submit"></ng-in-place-confirm-btn>
+    </div>
+    <div style="width: 300px; padding-top: 50px; margin-left: auto; margin-right: auto">
+        <ng-in-place-confirm-btn option="option2" submit="submit"></ng-in-place-confirm-btn>
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
@@ -21,7 +24,7 @@
 <script>
     angular.module('myApp', ['ngInPlaceConfirmBtn'])
             .controller('myCtrl', function ($scope, $timeout) {
-                $scope.option = {
+                $scope.option1 = {
                     name: 'My IPC Button',
                     hasInputBox: true,
                     placeholder: '(required) This is placeholder',
@@ -29,6 +32,11 @@
                     tooltipDirection: 'right',
                     inputBoxName: 'myInput',
                     inputRequired: true
+                };
+                $scope.option2 = {
+                    name: 'My Another IPC Button',
+                    placeholder: 'This is placeholder',
+                    tooltip: 'Tooltip by default on the left',
                 };
                 $scope.submit = function () {
                     $scope.$broadcast('submitting');
