@@ -18,16 +18,16 @@
             '<a class="btn btn-default" role="button" ng-click="!submitting && cancel()" ng-disabled="submitting">Cancel</a>' +
             '</div>' +
             '</div>' +
-            '<div class="my-popover" ng-class="option.tooltipDirection || \'left\'" ng-show="showConfirm && option.tooltip">' +
-            '<div class="my-popover-arrow"></div>' +
-            '<div class="my-popover-body" style="padding: 8px; width: 300px;"><span>{{option.tooltip}}</span></div>' +
+            '<div class="ipc-btn-popover" ng-class="option.tooltipDirection || \'left\'" ng-show="showConfirm && option.tooltip">' +
+            '<div class="ipc-btn-popover-arrow"></div>' +
+            '<div class="ipc-btn-popover-body" style="padding: 8px; width: 300px;"><span>{{option.tooltip}}</span></div>' +
             '</div></div>',
             restrict: 'E',
             scope: {
                 option: "=",
                 submit: "="
             },
-            link: function (scope, element) {
+            link: function (scope) {
                 scope.submitting = false;
                 scope.showConfirm = false;
                 scope.showValidation = false;

@@ -3,39 +3,39 @@
     position: relative;
 }
 
-.my-popover {
+.ipc-btn-popover {
     position: absolute;
     opacity: 1;
     z-index: 100;
     border-radius: 6px;
 }
 
-.my-popover.ng-hide-add, .my-popover.ng-hide-remove {
+.ipc-btn-popover.ng-hide-add, .ipc-btn-popover.ng-hide-remove {
     transition: all ease 0s;
 }
 
-.my-popover.ng-hide-add-active, .my-popover.ng-hide-remove-active {
+.ipc-btn-popover.ng-hide-add-active, .ipc-btn-popover.ng-hide-remove-active {
     transition: all ease 0.2s;
 }
 
-.my-popover.ng-hide-remove,
-.my-popover.ng-hide-add.ng-hide-add-active {
+.ipc-btn-popover.ng-hide-remove,
+.ipc-btn-popover.ng-hide-add.ng-hide-add-active {
     opacity: 0;
 }
 
-.my-popover.ng-hide-add,
-.my-popover.ng-hide-remove.ng-hide-remove-active {
+.ipc-btn-popover.ng-hide-add,
+.ipc-btn-popover.ng-hide-remove.ng-hide-remove-active {
     opacity: 1;
 }
 
-.my-popover .close-btn {
+.ipc-btn-popover .close-btn {
     position: absolute;
     display: inline-block;
     right: 6px;
     top: 6px;
 }
 
-.my-popover.left {
+.ipc-btn-popover.left {
     right: 100%;
     top: 0;
     min-width: 150px;
@@ -45,7 +45,7 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
 
-.my-popover.left .my-popover-arrow {
+.ipc-btn-popover.left .ipc-btn-popover-arrow {
     top: 10px;
     right: -16px;
     border-width: 8px;
@@ -59,7 +59,7 @@
     border-left-color: rgba(0, 0, 0, .25);
 }
 
-.my-popover.left .my-popover-arrow:after {
+.ipc-btn-popover.left .ipc-btn-popover-arrow:after {
     content: " ";
     border-width: 7px;
     top: -7px;
@@ -74,7 +74,7 @@
     border-left-color: #fff;
 }
 
-.my-popover.right {
+.ipc-btn-popover.right {
     left: 100%;
     top: 0;
     min-width: 150px;
@@ -84,7 +84,7 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
 
-.my-popover.right .my-popover-arrow {
+.ipc-btn-popover.right .ipc-btn-popover-arrow {
     top: 10px;
     left: -16px;
     border-width: 8px;
@@ -98,7 +98,7 @@
     border-right-color: rgba(0, 0, 0, .25);
 }
 
-.my-popover.right .my-popover-arrow:after {
+.ipc-btn-popover.right .ipc-btn-popover-arrow:after {
     content: " ";
     border-width: 7px;
     top: -7px;
