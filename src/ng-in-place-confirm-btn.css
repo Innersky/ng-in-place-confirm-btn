@@ -143,9 +143,15 @@
 }
 
 .ipc-confirm-btn {
+    display: flex;
     position: absolute;
     z-index: 1;
     top: 50%;
+    width: 100%;
+}
+
+.ipc-confirm-btn > .btn {
+    flex: 1;
 }
 
 .ipc-confirm-btn .btn:first-child {

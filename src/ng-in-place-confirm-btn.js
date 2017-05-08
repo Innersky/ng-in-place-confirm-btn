@@ -13,7 +13,7 @@
             '</div>' +
             '<input class="form-control ipc-input ng-hide" type="text" ng-model="option.inputValue" name="{{option.inputBoxName}}" ng-change="hideValidation()" placeholder="{{option.placeholder}}" data-toggle="tooltip" data-placement="top" title="{{option.placeholder}}" ng-show="showConfirm" ng-if="option.hasInputBox">' +
             '<a class="btn btn-default btn-block ipc-btn" ng-class="{transparent: showConfirm}" role="button" ng-click="delegateToConfirm()">{{option.name}}</a>' +
-            '<div class="btn-group btn-group-justified ipc-confirm-btn ng-hide" role="group" ng-show="showConfirm">' +
+            '<div class="btn-group ipc-confirm-btn ng-hide" role="group" ng-show="showConfirm">' +
             '<a class="btn btn-primary bold" role="button" ng-click="!submitting && submitAction()" ng-disabled="submitting">{{submitting?"Submitting...":"Confirm"}}</a>' +
             '<a class="btn btn-default" role="button" ng-click="!submitting && cancel()" ng-disabled="submitting">Cancel</a>' +
             '</div>' +
